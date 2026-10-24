@@ -18,7 +18,7 @@
     --pink:#e3b7bc;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{background:#ff00fe;}
+  html{background:var(--cream);}
   body{
     width:100%;max-width:1440px;margin:0 auto;background:var(--cream);
     font-family:"Segoe UI","Helvetica Neue",Arial,sans-serif;
@@ -330,5 +330,4 @@ const track=document.querySelector('.strip .track');
 track.innerHTML='';
 for(let k=0;k<2;k++)for(const s of p.slice(2)){const im=document.createElement('img');im.src=s;im.alt='';track.appendChild(im);}
 </script>
-<script>if(location.search.indexOf('measure')>=0){addEventListener('load',()=>{document.title='SW='+document.documentElement.scrollWidth+' VW='+innerWidth})}</script>
 </html>
