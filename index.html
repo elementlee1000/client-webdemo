@@ -48,7 +48,7 @@
     linear-gradient(180deg,var(--matcha-pale) 0%,var(--cream) 100%);
     padding:64px 0 90px;overflow:hidden;}
   .hero .wrap{display:flex;flex-wrap:wrap;gap:60px;align-items:center;position:relative;z-index:2;}
-  .leaf{position:absolute;opacity:.5;z-index:1;}
+  .leaf{position:absolute;opacity:.5;z-index:1;pointer-events:none;}
   .hero-left{flex:1 1 420px;}
   h1{font-size:62px;line-height:1.12;color:var(--green-dark);
     font-weight:700;margin:26px 0 22px;}
@@ -105,6 +105,7 @@
 
   /* ── kontakt ────────────────────────── */
   .kontakt{background:var(--green-deep);color:#eef4e3;position:relative;overflow:hidden;}
+  .kontakt .wrap{position:relative;z-index:2;}
   .kontakt .sec-head h2{color:#fff;}
   .kontakt .sec-head .tag{color:var(--matcha-light);}
   .kontakt .sec-head p{color:#c8d6b8;}
